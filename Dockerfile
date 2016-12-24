@@ -15,6 +15,8 @@ COPY . /usr/src/electron-release-server
 
 COPY config/docker.js config/local.js
 
+RUN mkdir /data
+
 EXPOSE 80
 
 CMD [ "npm", "start" ]
